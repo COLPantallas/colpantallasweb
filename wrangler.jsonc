@@ -1,0 +1,10 @@
+{
+  "name": "colpantallas",
+  "pages_build_output_dir": ".",
+  "kv_namespaces": [
+    {
+      "binding": "AVAILABILITY_KV",
+      "id": "7424fe47bb9e4e91bfb3ecffd4b3e95f"
+    }
+  ]
+}
