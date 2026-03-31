@@ -1,0 +1,11 @@
+{
+  "name": "colpantallasweb",
+  "pages_build_output_dir": ".",
+  "compatibility_date": "2026-03-31",
+  "kv_namespaces": [
+    {
+      "binding": "AVAILABILITY_KV",
+      "id": "7424fe47bb9e4e91bfb3ecffd4b3e95f"
+    }
+  ]
+}
