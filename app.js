@@ -22,6 +22,23 @@
         document.body.style.overflow = '';
     }
 
+    /* Oculta el cargador cuando todos los recursos han terminado de cargar */
+    function iniciarCargador() {
+        const cargador = document.getElementById('cargador');
+        if (!cargador) return;
+
+        window.addEventListener('load', function () {
+            cargador.classList.add('oculto');
+            cargador.addEventListener(
+                'transitionend',
+                function () {
+                    cargador.hidden = true;
+                },
+                { once: true }
+            );
+        });
+    }
+
     /* Inicializar el menu movil */
     function iniciarMenuMovil() {
         if (!botonMenu || !menuMovil) return;
@@ -97,6 +114,7 @@
 
     /* Ejecutar al cargar el DOM */
     document.addEventListener('DOMContentLoaded', function () {
+        iniciarCargador();
         iniciarMenuMovil();
         iniciarAcordeon();
         iniciarRevealScroll();
